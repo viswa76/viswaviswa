@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>About me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about {
+            display: flex;
+        }
+
+        .about_left {
+            width: 50%;
+            padding: 80px 80px 30px 80px;
+        }
+
+        .about_right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body style="max-width:100%">
+    <header class="viswa">
+        <div class="viswa1">
+            <h1>VISWA</h1>
+        </div>
+        <div class="viswa2">
+            <ul>
+                <li><a href="sunday.html">Home</a></li>
+                <li><a href="sunday1.html">About US</a></li>
+                <li><a href="sunday2.html">What I DO</a></li>
+                <li><a href="sunday4.html">EXPERIENCE</a></li>
+                <li><a href="sunday5.html">PROJECTS</a></li>
+                <li><a href="sunday6.html">Portfolio</a></li>
+                <li><a href="sunday7.html">Contact US</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="about row">
+        <div class="about_left">
+            <div class="aboutus">
+                <h2>About Me</h2>
+                <h3 class="lead" style="color:purple">A lead front end & backend developer based in Chennai</h3><br>
+                <p class="viswa3" style="color:red">I design and develop services for customers. Full-stack developers
+                    may be creative, graphically inclined, internet- and tech-savvy,and have excellent attention to
+                    detail. You’ll want to learn the following skills to have a career in full-stack development.</p>
+            </div><br>
+            <div class="container1 row">
+                <div class="aboutus">
+                    <p><b>Birthday:</b><span id="btnBirthday">19th September 2000</span><button
+                            onclick="viswa('btnBirthday', 'Birthday')">Change</button></p>
+                    <p><b>Age:</b><span id="age">23</span><button onclick="updateInfo('age', 'Age')">Change</button>
+                    </p>
+                    <p><b>Residence:</b><span id="residence">Chennai</span><button
+                            onclick="viswa('residence', 'Residence')">Change</button></p>
+                    <p><b>Address:</b><span id="address">2/22A, Muthamman Nagar, Chennai</span><button
+                            onclick="viswa('address', 'Address')">Change</button></p>
+                    <p><b>E-mail:</b><span id="email">viswaraja12@gmail.com</span><button
+                            onclick="viswa('email', 'E-mail')">Change</button></p>
+                    <p><b>phone:</b><span id="phone">8248706708</span><button
+                            onclick="viswa('phone', 'Phone')">Change</button></p>
+                    <p><b>Freelancer:</b><span id="freelancer">Available</span><button
+                            onclick="viswa('freelancer', 'Freelancer')">Change</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="about_right">
+            <div class="">
+                <img src="viswapic1-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

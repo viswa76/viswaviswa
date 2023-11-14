@@ -1,0 +1,97 @@
+
+
+
+
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="viswa">
+            <div class="viswa1">
+                <h1>VISWA</h1>
+            </div>
+            <div class="viswa2">
+                <ul>
+                    <li><a href="sunday.html" >Home</a></li>
+                    <li><a href="sunday1.html" >About US</a></li>
+                    <li><a href="sunday2.html" >What I DO</a></li>
+                    <li><a href="sunday4.html" >EXPERIENCE</a></li>
+                    <li><a href="sunday5.html" >PROJECTS</a></li>
+                    <li><a href="sunday6.html" >Portfolio</a></li>
+                    <li><a href="sunday7.html" >Contact US</a></li>
+                </ul>
+            </div>
+        </header>
+    
+        <div class="viswa30  row p-5">
+            <div class="col-lg-3">
+                <h4 class="text-warning" id="portfolioName"><u>Portfolio</u></h4>
+                <button onclick="changePortfolioName()">CLICK HERE</button>
+                <p class="text-danger" id="portfolioDescription">This is my portfolio...</p>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-warning" id="productName"><u>Product</u></h4>
+                <button onclick="changeProductName()">CLICK HERE</button>
+                <h6 class="text-danger">Theme Design</h6>
+                <h6 class="text-danger">Plugin Design</h6>
+                <h6 class="text-danger">HTML Template</h6>
+                <h6 class="text-danger">CSS Style</h6>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-warning" id="linksName"><u>Useful Link</u></h4>
+                <button onclick="changeLinksName()">CLICK HERE</button>
+                <h6 class="text-danger">Blog</h6>
+                <h6 class="text-danger">Float</h6>
+                <h6 class="text-danger">Flex</h6>
+                <h6 class="text-danger">Grid</h6>
+                <h6 class="text-danger">Navbar</h6>
+                <h6 class="text-danger">Certifications</h6>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-warning" id="addressName"><u>Address</u></h4>
+                <button onclick="changeAddressName()">CLICK HERE</button>
+                <p class="text-danger" id="address">2/22A, Muthamman nagar, Ayanavaram, ch-23</p>
+            </div>
+        </div>
+    
+        <script>
+            function changePortfolioName() {
+                var newName = prompt('Enter new portfolio name:');
+                if (newName !== null && newName !== '') {
+                    document.getElementById('portfolioName').innerText = newName;
+                }
+            }
+    
+            function changeProductName() {
+                var newName = prompt('Enter new product name:');
+                if (newName !== null && newName !== '') {
+                    document.getElementById('productName').innerText = newName;
+                }
+            }
+    
+            function changeLinksName() {
+                var newName = prompt('Enter new links name:');
+                if (newName !== null && newName !== '') {
+                    document.getElementById('linksName').innerText = newName;
+                }
+            }
+    
+            function changeAddressName() {
+                var newName = prompt('Enter new address name:');
+                if (newName !== null && newName !== '') {
+                    document.getElementById('addressName').innerText = newName;
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
